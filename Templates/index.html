@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Home page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
 </head>
+<style>
+    body {
+
+        text-align: center;
+        background: linear-gradient(120deg, rgb(242 255 36 / 68%), #3496ff);
+        height: 96.1vh;
+
+    }
+</style>
+
 <body>
-    <h1>Welcome {{request.user}}  </h1>
-    <p>Hello You have successfully logged in Congratulations</p>
-    <a href="/logout">Logout</a>
+
+    <h1>Welcome {{request.user}} </h1>
+    <h4>You have successfully logged in Congratulations</h4>
+    <a href="/logout"><button class="btn btn-primary">Logout</button></a>
 </body>
+
 </html>
